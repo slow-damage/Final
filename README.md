@@ -2,6 +2,7 @@
 Group 1 FEWD Final Project
 
 ##Goals
+
 Minimum Requirements:
 - A Github repository
 - A navigation element on each page
@@ -13,7 +14,8 @@ Optional:
 
 
 ##Color Theme:
-Teal: #23a094
-Pink: #ff90e8
-Yellow: #ffc900
-Lavender: #90a8ed
+
+Teal: `#23a094`
+Pink: `#ff90e8`
+Yellow: `#ffc900`
+Lavender: `#90a8ed`
