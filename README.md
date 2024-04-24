@@ -1,7 +1,7 @@
 # Final
 Group 1 FEWD Final Project
 
-##Goals
+## Goals
 
 Minimum Requirements:
 - A Github repository
@@ -13,7 +13,7 @@ Optional:
 - JavaScript functionality
 
 
-##Color Theme:
+## Color Theme:
 
 Teal: `#23a094`
 Pink: `#ff90e8`
