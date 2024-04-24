@@ -12,3 +12,8 @@ Optional:
 - JavaScript functionality
 
 
+##Color Theme:
+Teal: #23a094
+Pink: #ff90e8
+Yellow: #ffc900
+Lavender: #90a8ed
