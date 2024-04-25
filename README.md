@@ -24,4 +24,4 @@ Top of CSS
   --lavender: #90a8ed;
 }
 
-Use var(--color); vs hex codegit pu
+Use var(--color); vs hex
