@@ -15,8 +15,13 @@ Optional:
 
 
 ## Color Theme:
+Top of CSS 
 
-Teal: `#23a094`
-Pink: `#ff90e8`
-Yellow: `#ffc900`
-Lavender: `#90a8ed`
+:root {
+  --teal: #23a094;
+  --pink: #ff90e8;
+  --yellow: #ffc900;
+  --lavender: #90a8ed;
+}
+
+Use var(--color); vs hex codegit pu
