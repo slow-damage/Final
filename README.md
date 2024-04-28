@@ -16,6 +16,10 @@ Optional:
 
 - JavaScript functionality
 
+## Project Title:
+
+### Pawfessional Enterprises
+
 ## Color Theme:
 
 Top of CSS
