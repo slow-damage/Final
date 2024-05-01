@@ -120,15 +120,14 @@ body {
 
     }
 
-    .nav-links {
+    .nav-menu.active li {
         text-align: center;
         line-height: 60px;
-        width: 100%;
+        width: 100vw;
         display: table;
-        border: solid 2px;
     }
 
-    .nav-links:hover {
+    .nav-menu.active li:hover {
         background-color: var(--pink);
         color: var(--white);
         transition: all 0.4s ease-out;
