@@ -1,0 +1,22 @@
+.nunito-<uniquifier> {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+
+:root {
+    --teal: #23a094;
+    --pink: #ff90e8;
+    --yellow: #ffc900;
+    --lavender: #90a8ed;
+  }
+.title{
+    color: cornsilk;
+    text-align: center;
+    font-size: 50px}
+
+.resume{
+
+
+}
