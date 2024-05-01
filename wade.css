@@ -1,8 +1,11 @@
-.banner {
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 3rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
-
 img {
   max-width: 80%;
 }
