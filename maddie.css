@@ -14,3 +14,15 @@ p {color: #ffc900;
     text-align: left;
     font-size: 25px
 }
+
+.layout3 {display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 5px;
+    row-gap: 5px;
+    padding: 5px;
+    transition: opacity 1s ease-in-out;}
+.layout3:hover {opacity: 75%;} 
