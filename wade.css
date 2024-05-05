@@ -1,30 +1,25 @@
 body {
   font-family: 'Nunito';
-  font-size:0.9em;
+  font-size:0.92rem;
   margin: 0;
-  padding: 3rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   background-color:aliceblue;
 }
-.banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 85%;
-
-}
 .banner img {
-  max-width: 100%;
+ max-width: 85%;
 }
 .hero {
   display: flex;
   justify-content: center;
   padding-top: 1.4rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.85rem;
 }
-.hero img{
+.hero img {
   max-width: 100%;
+  border-radius: 8px;
+  box-shadow: -3px 4.5px 8px rgba(0, 0, 0, 0.28);
 }
 #disclaimer {
   display: flex;
@@ -46,4 +41,38 @@ body {
   height: 62px;
   border-radius: 50%;
   margin-right: 20px;
+  box-shadow: -2px 3px 5px rgba(0, 0, 0, 0.65);
+}
+@media (min-width: 600px) {
+  body {
+    font-size: 1rem;
+    padding: 4rem;
+  }
+  .banner {
+    min-width: 90%;
+  }    
+  .hero, #disclaimer {
+    min-width: 95%;
+  }
+  #test1 img {
+    width: 62px;
+    height: 62px;
+  }
+}
+@media (min-width: 900px) {
+  body {
+    font-size: 1.125rem;
+    max-width: 1080px;
+    padding: 6rem;
+  }
+  .banner {
+    width: 75%;
+  } 
+  .hero, #disclaimer {
+    width: 70%;
+  }
+  #test1 img {
+    width: 80px;
+    height: 80px;
+  }
 }
