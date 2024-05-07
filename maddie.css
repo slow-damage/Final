@@ -1,4 +1,5 @@
-body {background-color: #23a094;}
+body {background-color: #23a094;
+    font-family: "Nunito",sans-serif}
 
 :root {
     --teal: #23a094;
@@ -20,9 +21,9 @@ p {color: #ffc900;
     justify-content: space-around;
     }
 
-.layout3 {display: flex;
+.flexbox {display: inline-block;
     flex-direction: row;
-    flex-wrap: nowrap; 
+    flex-wrap: wrap; 
     align-content: center;
     align-items: center;
     justify-content: space-evenly;
@@ -30,4 +31,18 @@ p {color: #ffc900;
     row-gap: 5px;
     padding: 5px;
     transition: opacity 1s ease-in-out;}
-.layout3:hover {opacity: 75%;} 
+.image-container:hover {opacity: 50%;} 
+
+.image-container img {
+    display: inline-block;
+    height: auto;}
+  
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%); 
+    color: midnightblue; 
+    padding: 10px 20px; 
+    font-size: 30px; 
+    text-align: center; }
