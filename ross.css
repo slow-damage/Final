@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(139, 81, 54);
+    font-family: "Nunito", sans-serif;
+    color: var(--white);
+}
+
+.capybara {
+    display: flex;
+  justify-content: center;
+  width: 480px;
+  height: 480px;
+  padding-top: 1.4rem;
+  padding-bottom: 0.85rem;
+}
