@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Nunito';
-  font-size:0.92rem;
+  font-size:0.9rem;
   margin: 0;
   padding: 2rem;
   display: flex;
@@ -27,17 +27,29 @@ body {
   justify-content: center;
   padding-top: 1.4rem;
   padding-bottom: 0.85rem;
+  margin-bottom: 0.45em;
+  margin-left: 0.1em;
 }
 .hero img {
+  display: flex;
+  justify-content: center;
   max-width: 100%;
   border-radius: 8px;
   box-shadow: -3px 4.5px 8px rgba(0, 0, 0, 0.28);
 }
-#about {
-  border: 5.5px solid var(--lavender);
+
+.about {
+  max-width: 91.5%;
+  border: solid var(--lavender);
   border-radius: 8px;
   padding: 1rem;
+  padding-bottom: 2.2rem;
   background-color: var(--lavender)
+}
+
+#test1 img {
+  width: 80px;
+  height: 80px;
 }
 #disclaimer {
   display: flex;
@@ -49,11 +61,13 @@ body {
 }
 
 .testimonials {
-  border: 5.5px solid var(--pink);
+  border: solid var(--pink);
   border-radius: 8px;
   padding: 1rem;
+  padding-bottom: 2rem;
   margin-top: 1rem;
   background-color: #ff90e8;
+  max-width: 91.5%;
 }
 #test1 {
   display: flex;
@@ -61,22 +75,25 @@ body {
   align-items: center;
 }
 #test1 p {
-  line-height: 1.4rem;
+  line-height: 1.35rem;
+  margin-left: 1rem;
 }
 #test1 img {
   width: 62px;
   height: 62px;
   border-radius: 50%;
-  margin-right: 20px;
+  margin-right: 2px;
   box-shadow: -2px 3px 5px rgba(0, 0, 0, 0.65);
 }
 
 .contact {
-  border: 5.5px solid var(--yellow);
+  border: solid var(--yellow);
   border-radius: 8px;
   padding: 1rem;
+  padding-bottom: 1.5rem;
   margin-top: 1rem;
-  background-color: var(--yellow)
+  background-color: var(--yellow);
+  max-width: 91.5%;
 }
 @media (min-width: 600px) {
   body {
@@ -88,12 +105,21 @@ body {
     padding-top: 0.75rem;
     padding-bottom: 1.5rem;
   }    
-  .hero, #disclaimer {
-    min-width: 95%;
+  .hero {
+    width: 96.9%;
+  }
+  #disclaimer {
+    width: 85%;
+    padding-left: 2.5rem;
+  }
+  h2, p {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
   #test1 img {
     width: 62px;
     height: 62px;
+    margin-left: 1rem;
   }
 }
 @media (min-width: 900px) {
@@ -102,16 +128,28 @@ body {
     max-width: 1080px;
     padding: 6rem;
   }
+  h2, p {
+    padding-left: 1.8rem;
+    padding-right: 2rem;
+  }
   .banner {
     width: 75%;
     padding-top: 0.25rem;
     padding-bottom: 1.25rem;
+    padding-left: 2rem;
   } 
-  .hero, #disclaimer {
-    width: 70%;
+  .hero {
+    min-width: 94%;
+    max-width: 95%;
+    margin-bottom: 0.6rem;
+    margin-left: 0;
   }
-  #test1 img {
-    width: 80px;
-    height: 80px;
+  #disclaimer {
+    width: 80%;
+    padding-left: 5rem;
+    padding-right: 2rem;
+  }
+  img {
+    margin-left: 0;
   }
 }
