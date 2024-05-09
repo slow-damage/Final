@@ -9,12 +9,16 @@ body {
   font-family: 'Nunito';
   font-size:0.9rem;
   margin: 0;
-  padding: 2rem;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
-  background-color:aliceblue;
-  min-width: 300px;
+  background-color:hsl(210, 59%, 93%);
+  min-width: 280px;
   color: #2f3636
+}
+h2, p {
+  padding-left: 0.15rem;
+  padding-right: 0.15rem;
 }
 .banner{
   padding-top: 2rem;
