@@ -91,6 +91,25 @@ body {
     background: var(--white);
 }
 
+.testimonials-container {
+    display: grid;
+
+}
+
+.testimonials {
+    border: dotted 1px var(--teal);
+    max-width: 40vw;
+    display: inline;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.testimonials img {
+    padding-right: 20px;
+    width: 150px;
+    float: left;
+}
+
 @media screen and (max-width: 768px) {
     .nav-container {
         position: relative;
