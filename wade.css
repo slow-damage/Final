@@ -1,78 +1,186 @@
-body {
-  font-family: 'Nunito';
-  font-size:0.92rem;
+.main {
+  font-family: "Nunito";
   margin: 0;
-  padding: 2rem;
+  color: #2f3636;
+  font-size: 1.15rem;
   display: flex;
   flex-direction: column;
-  background-color:aliceblue;
+  padding: 6rem;
+  max-width: 1280px;
+
 }
+.nav-menu li a{
+  transition:ease-in-out;
+  transition-duration: 325ms;
+}
+.nav-menu li:hover a {
+  color: var(--pink);
+  font-weight: bold;
+  font-size: 108%;
+}
+
+
+.banner {
+  padding-bottom: 2.5rem;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .banner img {
- max-width: 85%;
+  max-width: 100%;
 }
+
 .hero {
   display: flex;
   justify-content: center;
-  padding-top: 1.4rem;
-  padding-bottom: 0.85rem;
+  padding-bottom: 2rem;
 }
+
 .hero img {
-  max-width: 100%;
+  width: 100%;
   border-radius: 8px;
   box-shadow: -3px 4.5px 8px rgba(0, 0, 0, 0.28);
 }
+
 #disclaimer {
+  width: 80%;
+  padding-left: 5rem;
   display: flex;
   font-size: 0.8em;
-  width: 85%;
-  padding-left: 1.4rem;
-  padding-bottom: 6px;
+  color: hsla(240, 100%, 99%, 0.768);
+  padding-right: 1.5rem;
 }
-#test1 {
+
+h2,
+p {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  padding-top: 0.75rem;
+  padding-bottom: 1.25rem;
+}
+.about,
+.testimonials,
+.contact {
+  border-radius: 8px;
+  padding: 1.5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  max-width: 100%;
+}
+
+.about {
+  background-color: var(--lavender);
+}
+
+.testimonials {
+  background-color: var(--pink);
+}
+
+#test1,
+#test2 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
-#test1 p {
-  line-height: 1.5rem;
+
+.testimonials p {
+  margin-left: 1rem;
 }
-#test1 img {
-  width: 62px;
-  height: 62px;
+
+.testimonials img {
+  border: 0px solid var(--pink);
   border-radius: 50%;
-  margin-right: 20px;
+  width: 90px;
+  padding: 0;
+  margin: 0;
   box-shadow: -2px 3px 5px rgba(0, 0, 0, 0.65);
 }
-@media (min-width: 600px) {
-  body {
+
+.contact {
+  background-color: var(--yellow);
+}
+
+.contact ul {
+  padding-bottom: 0.8rem;
+}
+
+.contact li {
+  padding-left: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
     font-size: 1rem;
-    padding: 4rem;
+    margin: 0;
+    padding: 1.2rem;
   }
+
   .banner {
-    min-width: 90%;
-  }    
-  .hero, #disclaimer {
-    min-width: 95%;
+    padding-top: 1.2rem;
+    padding-bottom: 1.4rem;
   }
-  #test1 img {
-    width: 62px;
-    height: 62px;
+
+  .banner img {
+    max-width: 100%;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.3rem;
+  }
+
+  .hero img {
+    width: 100%;
+  }
+
+  h2,
+  p {
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+  }
+  h2 {
+    padding-top: 0;
+    padding-bottom: 1.15rem;
+  }
+
+  #disclaimer {
+    font-size: 0.8em;
+    width: 95%;
+    padding-right: 0.38rem;
+    padding-left: 1.25rem;
+    padding-top: 0.25rem;
+  }
+
+  .contact li {
+    padding-left: 1.2rem;
+  }
+
+  .contact,
+  .testimonials {
+    padding-bottom: 1.2rem;
+  }
+  
+  .nav-menu li:hover a {
+    color: var(--white);
+    font-weight: normal;
+    font-size: 100%;
   }
 }
-@media (min-width: 900px) {
-  body {
-    font-size: 1.125rem;
-    max-width: 1080px;
-    padding: 6rem;
-  }
-  .banner {
-    width: 75%;
-  } 
-  .hero, #disclaimer {
-    width: 70%;
-  }
-  #test1 img {
-    width: 80px;
-    height: 80px;
+
+@media screen and (min-width: 1440px) {
+  .main {
+    margin-left: 4.5rem;
+    margin-right: 3.5rem;
   }
 }

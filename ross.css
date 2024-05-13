@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(139, 81, 54);
+    font-family: "Nunito", sans-serif;
+    color: var(--white);
+}
+
+.capybara {
+    display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  padding-top: 1.4rem;
+  padding-bottom: 0.85rem;
+  padding-left: 6.0rem;
+}
+
+.styleA {
+  padding-left: 300px;
+  color: bisque;
+  font-size: 50px;
+}
+.bullet {
+  align-self: center; 
+  padding-left: 20px;
+  font-size: 35px;
+}
+.capybaras {
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-content: center;
+    align-items: center;
+    padding-left: 500px;
+}
+.CI
+{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}

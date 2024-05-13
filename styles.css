@@ -5,9 +5,10 @@
     --lavender: #90a8ed;
     --white: #fafaf1;
     --black: #333;
+    --bright: #fff;
   }
 
-  * {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -31,7 +32,7 @@ body {
     display: grid;
     grid-template-columns: 0.2fr auto 1fr;
     align-items: center;
-    height: 70px;
+    height: 80px;
     width: 90%;
     max-width: 1720px;
     margin: 0 auto;
@@ -54,14 +55,14 @@ body {
     justify-self: end;
 }
 
-.nav-links {
+.nav-menu a{
     color: var(--white);
     text-decoration: none;
 
 }
 
-.nav-links:hover {
-    color: var(--yellow);
+.nav-menu a:hover {
+    color: var(--white);
     transition: all 0.2s ease-out;
 }
 
@@ -90,6 +91,25 @@ body {
     background: var(--white);
 }
 
+.testimonials-container {
+    display: grid;
+
+}
+
+.testimonials {
+    border: dotted 1px var(--teal);
+    max-width: 40vw;
+    display: inline;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.testimonials img {
+    padding-right: 20px;
+    width: 150px;
+    float: left;
+}
+
 @media screen and (max-width: 768px) {
     .nav-container {
         position: relative;
@@ -102,7 +122,7 @@ body {
         margin: 0;
         width: 100%;
         position: absolute;
-        top: 80px;
+        top: 70px;
         left: -100%;
         opacity: 0;
         transition: all 0.5s ease;
@@ -140,25 +160,25 @@ body {
 
     .nav-btn {
         border: none;
-        padding: 0;
-        border-radius: 10;
-        background-color: var(--pink);
+        padding: 6px 16px;
+        border-radius: 4px;
         color: var(--white);
         transition: all 0.4s ease-out;
     }
 
     .nav-btn:hover {
-        border: none;
-        padding: 0;
-        border-radius: 10;
-        background-color: var(--teal);
+        background-color: transparent;
         color: var(--white);
-        transition: all 0.4s ease-out;
+        padding: 5px 15px;
+        border-radius: 4px;
+        border: solid 1px var(--bright);
+        transition: all 0.3s ease-out;
+    
     }
 
     #mobile-menu {
         position: absolute;
-        top: 20%;
+        top: 25%;
         right: 5%;
         transform: translate(5%, 20%);
     }
