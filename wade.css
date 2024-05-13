@@ -1,113 +1,112 @@
-
 .main {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   margin: 0;
-  color: #2f3636;  
-  font-size:1.2rem;
+  color: #2f3636;
+  font-size: 1.15rem;
   display: flex;
   flex-direction: column;
   padding: 6rem;
   max-width: 1280px;
-  margin-left: 0.5rem;
+
 }
-  .banner{
-    padding-top: 0.1rem;
-    padding-bottom: 2rem;
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 2px;
-    padding-right: 6px;
-    }
-    .banner img {
-      max-width:100%;
-    }
-    .hero {
-      display: flex;
-      justify-content: center;
-      padding-bottom: 3.5rem;
-    }
-    .hero img {
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: -3px 4.5px 8px rgba(0, 0, 0, 0.28);
-    }
-    #disclaimer {
 
-      width: 80%;
-      
-      padding-left: 5rem;
+.banner {
+  padding-bottom: 2.5rem;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-      display: flex;
+.banner img {
+  max-width: 100%;
+}
 
-      font-size: 0.8em;
+.hero {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
 
-      color:hsla(240, 100%, 99%, 0.768);  
-      
-      padding-right: 1.5rem;
-      }
-      h2, p {
+.hero img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: -3px 4.5px 8px rgba(0, 0, 0, 0.28);
+}
 
-        padding-left: 1.5rem;
+#disclaimer {
+  width: 80%;
+  padding-left: 5rem;
+  display: flex;
+  font-size: 0.8em;
+  color: hsla(240, 100%, 99%, 0.768);
+  padding-right: 1.5rem;
+}
 
-        padding-right: 1.5rem;
+h2,
+p {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+}
 
-        padding-bottom: 1rem;
-        
-        }
+h2 {
+  padding-top: 0.75rem;
+  padding-bottom: 1.25rem;
+}
+.about,
+.testimonials,
+.contact {
+  border-radius: 8px;
+  padding: 1.5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  max-width: 100%;
+}
 
-        h2 {
-          padding-top: 0.75rem;
-          padding-bottom: 1.25rem;
-        }
-        .about, .testimonials, .contact {
-          border-radius: 8px;
-          padding: 1.5rem;
-          padding-bottom: 2rem;
-          margin-bottom: 1rem;
-          margin-top: 0.5rem;
-          max-width: 100%;
-        }
-        .about {
-          background-color: var(--lavender);
-        }
-        .testimonials {
-          background-color: var(--pink);
-        }
-        #test1, #test2 {
+.about {
+  background-color: var(--lavender);
+}
 
-          display: flex;
-          
-          flex-direction: row;
-          
-          align-items: center;
+.testimonials {
+  background-color: var(--pink);
+}
 
-          padding-bottom: 1rem;
-          padding-top: 1rem;
-          
-          }
-        .testimonials p {
-          margin-left: 1rem;
-        }
-        .testimonials img {
-          border: 0px solid var(--pink);
-          border-radius: 50%;
-          width: 90px;
-          padding: 0;
-          margin: 0;
-          box-shadow: -2px 3px 5px rgba(0, 0, 0, 0.65);
-        }
-        .contact {
-          background-color: var(--yellow);
-        }
-        .contact ul {
-          padding-bottom: 0.8rem;
-        }
-        .contact li {
-          padding-left: 4rem;
-        }
+#test1,
+#test2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.testimonials p {
+  margin-left: 1rem;
+}
+
+.testimonials img {
+  border: 0px solid var(--pink);
+  border-radius: 50%;
+  width: 90px;
+  padding: 0;
+  margin: 0;
+  box-shadow: -2px 3px 5px rgba(0, 0, 0, 0.65);
+}
+
+.contact {
+  background-color: var(--yellow);
+}
+
+.contact ul {
+  padding-bottom: 0.8rem;
+}
+
+.contact li {
+  padding-left: 4rem;
+}
 
 @media screen and (max-width: 768px) {
   .main {
@@ -115,45 +114,57 @@
     margin: 0;
     padding: 1.2rem;
   }
-    .banner{
-     padding-top: 1.2rem;
-     padding-bottom: 1.4rem;
-      }
-      .banner img{
-        max-width:100%;
 
-      }
-      .hero {
-        display: flex;
-        justify-content: center;
-        padding-bottom: 1.3rem;
-      }
-      .hero img {
-        width: 100%;
-      }
-      h2, p {
+  .banner {
+    padding-top: 1.2rem;
+    padding-bottom: 1.4rem;
+  }
 
-        padding-left: 0.1rem;
-        
-        padding-right: 0.1rem;
-        
-        }
-        h2 {
-          padding-top: 0;
-          padding-bottom: 1.15rem;
-        }
-        #disclaimer {
-          font-size: 0.8em;
-          width: 95%;
-          padding-right: 0.38rem;
-          padding-left: 1.25rem;
-          padding-top: 0.25rem;
-        }
-        .contact li {
-          padding-left: 1.2rem;
-        }
-        .contact, .testimonials {
-          padding-bottom: 1.2rem;
-        }
-      
+  .banner img {
+    max-width: 100%;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.3rem;
+  }
+
+  .hero img {
+    width: 100%;
+  }
+
+  h2,
+  p {
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+  }
+  h2 {
+    padding-top: 0;
+    padding-bottom: 1.15rem;
+  }
+
+  #disclaimer {
+    font-size: 0.8em;
+    width: 95%;
+    padding-right: 0.38rem;
+    padding-left: 1.25rem;
+    padding-top: 0.25rem;
+  }
+
+  .contact li {
+    padding-left: 1.2rem;
+  }
+
+  .contact,
+  .testimonials {
+    padding-bottom: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main {
+    margin-left: 4.5rem;
+    margin-right: 3.5rem;
+  }
 }
