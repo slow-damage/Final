@@ -27,10 +27,10 @@ body {
 .capybaras {
   display: flex;
     flex-direction: row;
-    flex-wrap: nowrap; 
+    flex-wrap: wrap; 
     align-content: center;
     align-items: center;
-    padding-left: 100px;
+    padding-left: 500px;
 }
 .CI
 {
