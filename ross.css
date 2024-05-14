@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(139, 81, 54);
+    background-color: rgb(161, 101, 74);
     font-family: "Nunito", sans-serif;
     color: var(--white);
 }
@@ -11,7 +11,7 @@ body {
   height: 400px;
   padding-top: 1.4rem;
   padding-bottom: 0.85rem;
-  padding-left: 6.0rem;
+  padding-left: 30.0rem;
 }
 
 .styleA {
@@ -25,12 +25,13 @@ body {
   font-size: 35px;
 }
 .capybaras {
+  background-color: rgb(228, 177, 111);
   display: flex;
     flex-direction: row;
     flex-wrap: wrap; 
     align-content: center;
     align-items: center;
-    padding-left: 500px;
+    padding-left: 200px;
 }
 .CI
 {
@@ -39,4 +40,13 @@ body {
     justify-content: center;
     align-items: center;
     padding: 1rem;
+}
+.nav-menu li a{
+  transition:ease-in-out;
+  transition-duration: 325ms;
+}
+.nav-menu li:hover a {
+  color: var(--pink);
+  font-weight: bold;
+  font-size: 108%;
 }
