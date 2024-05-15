@@ -1,0 +1,77 @@
+.anamain {
+  font-size: 14px;
+  img {
+    width: 150px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+  font-size: 16px;
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .catimage, .kitty, .chefcatlovescooking {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+      border-radius: 50%;
+    }
+  }
+  .content-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--pink);
+  }
+  ul {
+    list-style-type: none;
+  }
+  .finalrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .testimages {
+  display: flex;
+  justify-content: space-around;
+  }
+  .testimonial {
+    background-color: var(--lavender);
+    text-align: center;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .contactinfo {
+    display: flex;
+    flex-direction: row; 
+    padding: 1rem;
+    align-items: center;
+  }
+  .contactinfo img {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  .contactinfo div {
+    padding-left: 2rem;
+  }
+}
+

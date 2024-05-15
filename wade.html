@@ -6,17 +6,50 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Feline Sleuth Network</title>
-    <link
-      rel="stylesheet"
-      href="/wade.css"
-    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
+    <link
+      rel="stylesheet"
+      href="wade.css"
+    />
   </head>
   <body>
-    <div>
+    <div class="nav-container">
+      <nav class="navbar">
+        <h1 id="navbar-logo">
+          <a href="index.html">
+            <img
+              src="PAW.png"
+              alt="Pawfessional Logo"
+              width="95px"
+            />
+          </a>
+        </h1>
+        <div
+          class="menu-toggle"
+          id="mobile-menu"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="wendy.html">Lucky</a></li>
+          <li><a href="wade.html">Sleuth</a></li>
+          <li><a href="ross.html">Hot Springs</a></li>
+          <li><a href="Ana.html">Chef Sardine</a></li>
+          <li><a href="maddie.html">Admin</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main">
       <div class="banner">
         <img
           src="/sleuthimage.png"
@@ -63,7 +96,21 @@
             - <em>Satisfied customer</em>
           </p>
         </div>
-        <div id="test2"></div>
+        <div id="test2">
+          <img
+            src="satcust2.png"
+            alt="img of a second satisfied customer"
+          />
+          <p>
+            "The FSN was the purr-fect solution! The team cracked the case
+            faster than you can say 'catnip.' They not only exposed the culprits
+            but also orchestrated a hiss-terical peace treaty. Sure, cleaning up
+            hairballs is a minor cat-astrophe, but it's worth it for the serene,
+            claw-some neighborhood nights!"
+            <br />
+            - <em>A Paws-itively Satisfied Neighbor</em>
+          </p>
+        </div>
       </div>
       <div class="contact">
         <h2>Contact us</h2>
@@ -83,6 +130,7 @@
           his daily nap times.
         </p>
       </div>
+      <script src="app.js"></script>
     </div>
   </body>
 </html>

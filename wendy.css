@@ -1,12 +1,5 @@
 
 :root {
-    /*Define Font Color*/
-    --teal: #23a094;
-    --pink: #ff90e8;
-    --yellow: #ffc900;
-    --lavender: #90a8ed;
-    --white: #fafaf1;
-    --black: #333;
 
     /* Define font weights  */
     --font-light: 200;
@@ -19,28 +12,24 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-/*Applying style to body elements*/
-body {
-    font-family: "Nunito";
-    background-color: var(--white);
-    color: var(--black);
+    font-family: "Nunito", sans-serif;
 }
 
 /* Define font-weight variables for different class */
-.nunito-light {
-    font-weight: var(--font-light);
-}
+.nunito-light {font-weight: var(--font-light);}
+.nunito-normal {font-weight: var(--font-normal);}
+.nunito-bold {font-weight: var(--font-bold);}
 
-.nunito-normal {
-    font-weight: var(--font-normal);
-}
-
-.nunito-bold {
-    font-weight: var(--font-bold);
-}
-
+/*nav menu color transition*/
+.nav-menu li a{
+    transition:ease-in-out;
+    transition-duration: 325ms;
+  }
+  .nav-menu li:hover a {
+    color: var(--pink);
+    font-weight: bold;
+    font-size: 108%;
+  }
 /* Style for headings and text */
 h2 {
     color: var(--teal);
@@ -48,15 +37,9 @@ h2 {
     font-weight: var(--font-bold);
 }
 /*styling anchor element used to create hyperlink*/
-a {
-    color: var(--teal);
-    text-decoration: none;
-}
+a {color: var(--teal); text-decoration: none;}
 /*change tex color when hoover over anchor element*/
-a:hover {
-    color: var(--yellow);
-}
-
+a:hover { color: var(--yellow);}
 
 /* diff Sections stylings */
 .bio, .services, .testimonials, .contact {
@@ -69,8 +52,8 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 0;/*remove default spacing*/
-    margin: 0; /*remove default spacing*/
+    padding: 0;
+    margin: 0; 
 }
 
 /* Styling Figure element in .dog-images class*/
@@ -84,8 +67,8 @@ a:hover {
 .dog-images img {
     width: 100%; 
     max-height: 200px; 
-    object-fit: cover; /*image will maintain ratio covering the whole container*/
-    border-radius: 8px;/*round corner for the image*/
+    object-fit: cover; 
+    border-radius: 8px;
 }
 /*styling figcaption in the .dog-image class*/
 .dog-images figcaption {
@@ -93,33 +76,51 @@ a:hover {
     color: var(--pink);
 }
 
-
-/* Contact style */
-.contact p {
-    margin-top: 10px;
-}
-
-/*place service and testimony sections in a container*/
 /*flex container, allow things to align and space evenly in the container*/
 .content-container {
     display: flex; 
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: flex-start; 
     flex-wrap: wrap; 
+    padding: 0 20px;
 }
-/*styling service and testimonial secitons*/
-.services, .testimonials {
-    flex: 1 1 48%; 
-    margin: 10px;
+
+.testimonials {
     background-color: #f0f0f0;
+    flex-basis: 45%;
 }
+.services{
+    border: dotted 1px var(--teal);
+    max-width: 40vw;
+    display: inline;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+}
+.service-container {
+    display: grid;
+
 /*style the list item for  services class*/
 .services ul {
     list-style-type: disc; 
     padding-left: 20px; 
 }
-/*style list item text to the left for services class*/
 .services li {
-    text-align: left; 
     margin-left: 20px; 
+}
+
+/*add this in for tablet and mobile friendly*/
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+  
+    .services, .testimonials {
+        flex-basis: 100%; 
+        margin-bottom: 20px;
+    }
+
+}
 }

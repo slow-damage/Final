@@ -1,159 +1,186 @@
-:root {
-  --teal: #23a094;
-  --pink: #ff90e8;
-  --yellow: #ffc900;
-  --lavender: #90a8ed;
-}
-
-body {
-  font-family: 'Nunito';
-  font-size:0.9rem;
+.main {
+  font-family: "Nunito";
   margin: 0;
-  padding: 1.25rem;
+  color: #2f3636;
+  font-size: 1.15rem;
   display: flex;
   flex-direction: column;
-  background-color:hsl(210, 59%, 93%);
-  min-width: 280px;
-  color: #2f3636
+  padding: 6rem;
+  max-width: 1280px;
+
 }
-h2, p {
-  padding-left: 0.15rem;
-  padding-right: 0.15rem;
+.nav-menu li a{
+  transition:ease-in-out;
+  transition-duration: 325ms;
 }
-.banner{
-  padding-top: 2rem;
+.nav-menu li:hover a {
+  color: var(--pink);
+  font-weight: bold;
+  font-size: 108%;
 }
+
+
+.banner {
+  padding-bottom: 2.5rem;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .banner img {
- max-width: 85%;
+  max-width: 100%;
 }
+
 .hero {
   display: flex;
   justify-content: center;
-  padding-top: 1.4rem;
-  padding-bottom: 0.85rem;
-  margin-bottom: 0.45em;
-  margin-left: 0.1em;
+  padding-bottom: 2rem;
 }
+
 .hero img {
-  display: flex;
-  justify-content: center;
-  max-width: 100%;
+  width: 100%;
   border-radius: 8px;
   box-shadow: -3px 4.5px 8px rgba(0, 0, 0, 0.28);
 }
 
-.about {
-  max-width: 91.5%;
-  border: solid var(--lavender);
-  border-radius: 8px;
-  padding: 1rem;
-  padding-bottom: 2.2rem;
-  background-color: var(--lavender)
-}
-
-#test1 img {
-  width: 80px;
-  height: 80px;
-}
 #disclaimer {
+  width: 80%;
+  padding-left: 5rem;
   display: flex;
   font-size: 0.8em;
-  color:hsla(240, 100%, 99%, 0.768);
-  width: 85%;
-  padding-left: 1.4rem;
-  padding-bottom: 6px;
+  color: hsla(240, 100%, 99%, 0.768);
+  padding-right: 1.5rem;
+}
+
+h2,
+p {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  padding-top: 0.75rem;
+  padding-bottom: 1.25rem;
+}
+.about,
+.testimonials,
+.contact {
+  border-radius: 8px;
+  padding: 1.5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  max-width: 100%;
+}
+
+.about {
+  background-color: var(--lavender);
 }
 
 .testimonials {
-  border: solid var(--pink);
-  border-radius: 8px;
-  padding: 1rem;
-  padding-bottom: 2rem;
-  margin-top: 1rem;
-  background-color: #ff90e8;
-  max-width: 91.5%;
+  background-color: var(--pink);
 }
-#test1 {
+
+#test1,
+#test2 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
-#test1 p {
-  line-height: 1.35rem;
+
+.testimonials p {
   margin-left: 1rem;
 }
-#test1 img {
-  width: 62px;
-  height: 62px;
+
+.testimonials img {
+  border: 0px solid var(--pink);
   border-radius: 50%;
-  margin-right: 2px;
+  width: 90px;
+  padding: 0;
+  margin: 0;
   box-shadow: -2px 3px 5px rgba(0, 0, 0, 0.65);
 }
 
 .contact {
-  border: solid var(--yellow);
-  border-radius: 8px;
-  padding: 1rem;
-  padding-bottom: 1.5rem;
-  margin-top: 1rem;
   background-color: var(--yellow);
-  max-width: 91.5%;
 }
-@media (min-width: 600px) {
-  body {
+
+.contact ul {
+  padding-bottom: 0.8rem;
+}
+
+.contact li {
+  padding-left: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
     font-size: 1rem;
-    padding: 4rem;
+    margin: 0;
+    padding: 1.2rem;
   }
+
   .banner {
-    min-width: 90%;
-    padding-top: 0.75rem;
-    padding-bottom: 1.5rem;
-  }    
+    padding-top: 1.2rem;
+    padding-bottom: 1.4rem;
+  }
+
+  .banner img {
+    max-width: 100%;
+  }
+
   .hero {
-    width: 96.9%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.3rem;
   }
+
+  .hero img {
+    width: 100%;
+  }
+
+  h2,
+  p {
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+  }
+  h2 {
+    padding-top: 0;
+    padding-bottom: 1.15rem;
+  }
+
   #disclaimer {
-    width: 85%;
-    padding-left: 2.5rem;
+    font-size: 0.8em;
+    width: 95%;
+    padding-right: 0.38rem;
+    padding-left: 1.25rem;
+    padding-top: 0.25rem;
   }
-  h2, p {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+
+  .contact li {
+    padding-left: 1.2rem;
   }
-  #test1 img {
-    width: 62px;
-    height: 62px;
-    margin-left: 1rem;
+
+  .contact,
+  .testimonials {
+    padding-bottom: 1.2rem;
+  }
+  
+  .nav-menu li:hover a {
+    color: var(--white);
+    font-weight: normal;
+    font-size: 100%;
   }
 }
-@media (min-width: 900px) {
-  body {
-    font-size: 1.125rem;
-    max-width: 1080px;
-    padding: 6rem;
-  }
-  h2, p {
-    padding-left: 1.8rem;
-    padding-right: 2rem;
-  }
-  .banner {
-    width: 75%;
-    padding-top: 0.25rem;
-    padding-bottom: 1.25rem;
-    padding-left: 2rem;
-  } 
-  .hero {
-    min-width: 94%;
-    max-width: 95%;
-    margin-bottom: 0.6rem;
-    margin-left: 0;
-  }
-  #disclaimer {
-    width: 80%;
-    padding-left: 5rem;
-    padding-right: 2rem;
-  }
-  img {
-    margin-left: 0;
+
+@media screen and (min-width: 1440px) {
+  .main {
+    margin-left: 4.5rem;
+    margin-right: 3.5rem;
   }
 }
