@@ -83,6 +83,13 @@ body {
 
 }
 
+.text {
+    display: block;
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+}
+
 .menu-toggle .bar {
     width: 25px;
     height: 3px;
@@ -91,22 +98,27 @@ body {
     background: var(--white);
 }
 
-.main-img-container { 
-    display: inline-block;
-    margin-left: 60vw;
-    padding-bottom: 5%;
-}
-
 .testimonials-container {
     display: grid;
     align-content: center;
     justify-content: center;
+}
 
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #main-img {
-    max-width: 40vw;
+    max-width: 500px;
     border-radius: 10%;
+    float: right;
+}
+
+.slogan {
+    padding-top: 25px;
 }
 
 .testimonials {
@@ -122,9 +134,11 @@ body {
     width: 150px;
     float: left;
 }
+
 .customer {
     font-style: oblique;
 }
+
 @media screen and (max-width: 768px) {
     .nav-container {
         position: relative;
