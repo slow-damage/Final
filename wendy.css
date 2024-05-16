@@ -37,31 +37,22 @@ h2 {
     font-weight: var(--font-bold);
     text-align: center;
 }
-/*styling anchor element used to create hyperlink*/
+/*styling  hyperlink*/
 a {color: var(--teal); text-decoration: none;}
-/*change tex color when hoover over anchor element*/
+/*change tex color when hoover over*/
 a:hover { color: var(--yellow);}
 
-/* diff Sections stylings */
-.bio, .services, .testimonial, .contact {
-    margin-top: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    
-}
+
 .dog-images {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 0;
-    margin: 0; 
 }
 
 /* Styling Figure element in .dog-images class*/
 .dog-images figure {
     flex: 1 1 45%; 
-    margin: 10px;
+    margin: 20px;
     text-align: center;
     box-sizing: border-box; 
 }
@@ -71,21 +62,28 @@ a:hover { color: var(--yellow);}
     max-height: 200px; 
     object-fit: cover; 
     border-radius: 8px;
+
 }
 /*styling figcaption in the .dog-image class*/
 .dog-images figcaption {
-    margin-top: 5px;
+    margin-top: 10px;
     color: var(--pink);
 }
 
 /*flex container, allow things to align and space evenly in the container*/
 .content-container {
     display: flex; 
-    flex-direction: row;
     justify-content: space-around;
     align-items: flex-start; 
     flex-wrap: wrap; 
-    padding: 0 20px;
+}
+/* diff Sections stylings */
+.bio, .services, .testimonial, .contact {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
     
 }
 
@@ -94,25 +92,8 @@ a:hover { color: var(--yellow);}
     border: dotted 1px var(--teal);
     max-width: 700px;
     display: inline;
-    padding: 20px;
-    margin-bottom: 10px;
-    margin: 5px 5px 5px 15px;
-    background-color: var(--white);
     box-sizing: border-box;
-}
-.service-container {
-    display: grid;
-    align-content: center;
-    justify-content: center;
 
-/*style the list item for  services class*/
-.services ul {
-    list-style-type: disc; 
-    padding-left: 20px;
-
-}
-.services li {
-    margin-left: 20px; 
 }
 
 /*add this in for tablet and mobile friendly*/
@@ -120,11 +101,4 @@ a:hover { color: var(--yellow);}
     .content-container {
         flex-direction: column;
     }
-  
-    .services, .testimonials {
-        flex-basis: 100%; 
-        margin-bottom: 20px;
-    }
-
-}
 }
