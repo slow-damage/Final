@@ -20,16 +20,6 @@
 .nunito-normal {font-weight: var(--font-normal);}
 .nunito-bold {font-weight: var(--font-bold);}
 
-/*nav menu color transition*/
-.nav-menu li a{
-    transition:ease-in-out;
-    transition-duration: 325ms;
-  }
-  .nav-menu li:hover a {
-    color: var(--pink);
-    font-weight: bold;
-    font-size: 108%;
-  }
 /* Style for headings and text */
 h2 {
     color: var(--teal);
