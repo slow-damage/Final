@@ -85,14 +85,11 @@ a:hover { color: var(--yellow);}
     align-items: flex-start; 
     flex-wrap: wrap; 
     padding: 0 20px;
+    
 }
 
-.testimonials {
-    border: dotted 1px var(--teal);
-    background-color: var(--white);
-    flex-basis: 45%;
-}
-.services{
+.services, .testimonial{
+    text-align: left;
     border: dotted 1px var(--teal);
     max-width: 700px;
     display: inline;
@@ -110,7 +107,8 @@ a:hover { color: var(--yellow);}
 /*style the list item for  services class*/
 .services ul {
     list-style-type: disc; 
-    padding-left: 20px; 
+    padding-left: 20px;
+
 }
 .services li {
     margin-left: 20px; 
