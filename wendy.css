@@ -47,6 +47,7 @@ a:hover { color: var(--yellow);}
     padding: 20px;
     border-radius: 8px;
     text-align: center;
+    
 }
 .dog-images {
     display: flex;
@@ -87,20 +88,24 @@ a:hover { color: var(--yellow);}
 }
 
 .testimonials {
-    background-color: #f0f0f0;
+    border: dotted 1px var(--teal);
+    background-color: var(--white);
     flex-basis: 45%;
 }
 .services{
     border: dotted 1px var(--teal);
-    max-width: 40vw;
+    max-width: 700px;
     display: inline;
     padding: 20px;
     margin-bottom: 10px;
-    background-color: #f0f0f0;
+    margin: 5px 5px 5px 15px;
+    background-color: var(--white);
     box-sizing: border-box;
 }
 .service-container {
     display: grid;
+    align-content: center;
+    justify-content: center;
 
 /*style the list item for  services class*/
 .services ul {
