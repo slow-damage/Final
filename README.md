@@ -60,3 +60,14 @@ Use `var(--color)`; vs hex
   font-style: normal;
 }
 ```
+Lee's Feedback
+
+Hi Team,
+
+Great work on this project. The code is well written, laid out nicely, and is very clean and easy to read. I love the nav bar with the logo that is consistent across all pages. The syntax across all pages is well done also.
+
+If I want to be picky, on the Sleuth page, the Testimonials box is a little smaller, and not lined up with the What we Do and Contact Us boxes. If this was a conscious style choice, then disregard this, but I just wanted to point that out. Other than that, this site looks awesome! Great work and it was a pleasure having you in class this semester. Keep up the good work!
+
+Thank you,
+
+Lee
