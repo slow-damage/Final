@@ -66,7 +66,7 @@ h2 {
   padding-bottom: 1.25rem;
 }
 .about,
-.testimonials,
+.testimonialsw,
 .contact {
   border-radius: 8px;
   padding: 1.5rem;
@@ -80,7 +80,7 @@ h2 {
   background-color: var(--lavender);
 }
 
-.testimonials {
+.testimonialsw {
   background-color: var(--pink);
 }
 
@@ -93,11 +93,11 @@ h2 {
   padding-top: 1rem;
 }
 
-.testimonials p {
+.testimonialsw p {
   margin-left: 1rem;
 }
 
-.testimonials img {
+.testimonialsw img {
   border: 0px solid var(--pink);
   border-radius: 50%;
   width: 90px;
